@@ -4,27 +4,27 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Category vegetables = new Category("Warzywa", "Zdrowe warzywa dla każdego");
-        Category sweets = new Category("Słodycze", "Coś słodkiego dla każdego");
+        Category vegetables = new Category("Vegetables", "Healthy vegetables for everyone");
+        Category sweets = new Category("Sweets", "Something sweet for everyone");
 
-        Product kalafior = new Product("Kalafior", 5.25, "Świeży kalafior prosto ze wsi", vegetables);
-        Product marchew = new Product("Marchew", 3.5, "Dorodna marchew", vegetables);
+        Product cauliflower = new Product("Cauliflower", 5.25, "Fresh cauliflower right from the countryside", vegetables);
+        Product carrot = new Product("Carrot", 3.5, "Ripe carrot", vegetables);
 
-        Product lody = new Product("Lody", 7.2, "Dobre lody dla ochłody", sweets);
+        Product iceCream = new Product("Ice cream", 7.2, "Delicious ice cream to let you feel cool", sweets);
 
-        Product szafa = new Product("Szafa", 230.5, "Nowoczesna szafa", null);
+        Product wardrobe = new Product("Wardrobe", 230.5, "Modern wardrobe", null);
 
-        SpecialOffer ofertaSpecjalna = new SpecialOffer(kalafior, kalafior.description,
+        SpecialOffer specialOffer = new SpecialOffer(cauliflower, cauliflower.description,
                 "26-09-2023", "30-09-2023", 0.2);
 
-        System.out.println("Produkt nr 1: \n" +
-                kalafior.printInfo());
-        System.out.println("\n\nProdukt nr 2: \n" +
-                marchew.printInfo());
-        System.out.println("\n\nProdukt nr 3: \n" +
-                lody.printInfo());
-        System.out.println("\n\nProdukt nr 4: \n" +
-                szafa.printInfo());
-        
+        System.out.println("Product No. 1: \n" +
+                cauliflower.printInfo());
+        System.out.println("\n\nProduct No. 2: \n" +
+                carrot.printInfo());
+        System.out.println("\n\nProduct No. 3: \n" +
+                iceCream.printInfo());
+        System.out.println("\n\nProduct No. 4: \n" +
+                wardrobe.printInfo());
+
     }
 }
